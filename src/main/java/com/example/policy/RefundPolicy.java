@@ -5,6 +5,6 @@ import lombok.Value;
 
 @Value(staticConstructor = "of")
 public class RefundPolicy {
-    Specification condition;
-    int fee;
+    Specification condition; // 조건
+    int fee; // 무엇
 }

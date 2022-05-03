@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.conditions.Specification;
 import com.example.model.Meeting;
 import com.example.model.Period;
 import com.example.policy.RefundPolicy;
@@ -13,6 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // 환불을 하려는 시점
         Factor factor = Factor.of(123L, LocalDateTime.now());
 
         List<Meeting> meetings = loadMeetingsByMembershipId(123L);
@@ -23,6 +25,12 @@ public class Main {
                 .findFirst();
 
         RefundPolicy refundPolicy = first.get();
+
+        int fee = refundPolicy.getFee();
+        // int amout =  api.getRefundabeAmount(orderId);
+        // refund orderId api 결과로 환불 가능 금액이 나온다
+
+        //
         System.out.println("refundPolicy = " + refundPolicy);
     }
 
@@ -30,14 +38,15 @@ public class Main {
         // logic (100 / 미팅 수) * (미팅 수 - n 번째 모임)
         int meetingCount = meetings.size();
 
-        List<RefundPolicy> policies = new ArrayList<>();
+        List<RefundPolicy> cadidates = new ArrayList<>();
 
         for (int i = 0; i < meetingCount; i++) {
             int refundRate = (100 / meetingCount) * (meetingCount - i);
             Meeting meeting = meetings.get(i);
-            policies.add(RefundPolicy.of(meeting.toCondition(), refundRate));
+            Specification 해당_미팅에_해당하는_컨디션 = meeting.toCondition();
+            cadidates.add(RefundPolicy.of(해당_미팅에_해당하는_컨디션, refundRate));
         }
-        return policies;
+        return cadidates;
     }
 
     public static List<Meeting> loadMeetingsByMembershipId(Long membershipId) {
