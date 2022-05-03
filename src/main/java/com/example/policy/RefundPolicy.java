@@ -1,10 +1,10 @@
 package com.example.policy;
 
-import com.example.conditions.PeriodCondition;
+import com.example.conditions.Specification;
 import lombok.Value;
 
 @Value(staticConstructor = "of")
 public class RefundPolicy {
-    PeriodCondition condition;
+    Specification condition;
     int fee;
 }

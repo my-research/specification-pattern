@@ -69,7 +69,7 @@ public class Abc {
         LocalDateTime refundedAt = LocalDateTime.now().minusDays(10);
         double fee = 1D;
 
-        Factor factor = Factor.of(1L, refundedAt, refundedAt, refundedAt, refundedAt);
+        Factor factor = Factor.of(1L, refundedAt);
         for (int i = 0; i < meetingPeriodCondition.size(); i++) {
             if (meetingPeriodCondition.get(i).isSatisfiedBy(factor)){
                 // (100 / N) * (N-Order)
