@@ -6,5 +6,5 @@ import lombok.Value;
 @Value(staticConstructor = "of")
 public class Factor {
     Long clubId;
-    LocalDateTime now;
+    LocalDateTime confirmedAt;
 }

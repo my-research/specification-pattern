@@ -8,7 +8,6 @@ import lombok.Value;
 public class Meeting {
     Long meetingId;
     Period period;
-    int order;
 
     public Specification toCondition() {
         return PeriodCondition.of(period);

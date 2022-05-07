@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.conditions.PeriodTest2" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-03T13:31:18" hostname="trevariui-MacBookPro-3.local" time="0.03">
+  <properties/>
+  <testcase name="기간에_따른_환불()" classname="com.example.conditions.PeriodTest2" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -12,7 +12,8 @@ public class PeriodCondition implements Specification {
 
     @Override
     public boolean isSatisfiedBy(Factor factor) {
-        LocalDateTime now = factor.getNow();
+        
+        LocalDateTime now = LocalDateTime.now();
         LocalDateTime startedAt = period.getStartedAt();
         LocalDateTime beginPeriod = startedAt.minusDays(8L);
 

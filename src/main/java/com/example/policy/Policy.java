@@ -1,10 +1,11 @@
 package com.example.policy;
 
 import com.example.conditions.Specification;
+import com.example.model.FeeRate;
 import lombok.Value;
 
 @Value(staticConstructor = "of")
-public class RefundPolicy {
-    Specification condition; // 조건
-    int fee; // 무엇
+public class Policy {
+    Specification condition;
+    FeeRate feeRate;
 }
