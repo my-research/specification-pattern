@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.after.condition.CardDiscountConditionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-05-08T06:41:00" hostname="trevariui-MacBookPro-3.local" time="0.049">
+  <properties/>
+  <testcase name="결제수단이_CARD()" classname="com.example.after.condition.CardDiscountConditionTest" time="0.029"/>
+  <testcase name="[1] VBANK" classname="com.example.after.condition.CardDiscountConditionTest" time="0.007"/>
+  <testcase name="[2] CASH" classname="com.example.after.condition.CardDiscountConditionTest" time="0.001"/>
+  <testcase name="[3] TOSS" classname="com.example.after.condition.CardDiscountConditionTest" time="0.001"/>
+  <testcase name="[4] KAKAO_PAY" classname="com.example.after.condition.CardDiscountConditionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
