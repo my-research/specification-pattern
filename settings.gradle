@@ -1,2 +1,3 @@
 rootProject.name = 'specification-pattern'
 
+include 'java-spec'
