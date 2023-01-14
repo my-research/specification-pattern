@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spec-by-java/spec-by-java/spec-by-java.iml" filepath="$PROJECT_DIR$/spec-by-java/spec-by-java/spec-by-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-spec/specification-pattern.java-spec.main.iml" filepath="$PROJECT_DIR$/.idea/modules/java-spec/specification-pattern.java-spec.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin-spec/specification-pattern.kotlin-spec.main.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin-spec/specification-pattern.kotlin-spec.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin-spec/specification-pattern.kotlin-spec.test.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin-spec/specification-pattern.kotlin-spec.test.iml" />
     </modules>
   </component>
 </project>

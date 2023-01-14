@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/java-spec" />
+            <option value="$PROJECT_DIR$/kotlin-spec" />
           </set>
         </option>
       </GradleProjectSettings>
