@@ -1,9 +1,9 @@
 package com.github.dhslrl321
 
-import com.github.dhslrl321.legacy.Notification
-import com.github.dhslrl321.legacy.SimpleNotifier
-import com.github.dhslrl321.legacy.ToastNotifier
-import com.github.dhslrl321.legacy.TwilioNotifier
+import com.github.dhslrl321.notifier.Notification
+import com.github.dhslrl321.notifier.NotifierContainer
+import com.github.dhslrl321.notifier.ToastNotifier
+import com.github.dhslrl321.notifier.TwilioNotifier
 
 fun main() {
     val notifier = initNotifier()
@@ -13,7 +13,7 @@ fun main() {
     notifier.doNotify(notifications[1])
 }
 
-private fun initNotifier() = SimpleNotifier(listOf(ToastNotifier(), TwilioNotifier()))
+private fun initNotifier() = NotifierContainer(listOf(ToastNotifier(), TwilioNotifier()))
 
 private fun generateNotifications(): List<Notification> = listOf(
     Notification(

@@ -1,23 +1,17 @@
-# 할인
+# 알림
 
-주문 정보에 존재하는 몇가지 데이터를 보고 할인을 계산하라
+notification 에 따른 알림 시스템을 만들어라
 
-# 엔티티
+# notification 의 종류
 
-- 회원
-  - 생일
-  - 가입일
-- 상품
-  - 카테고리
-- 주문
-  - 결제일
-  - 결제 금액
+- **sms type**
+  - email
+  - phone number
+- **번호의 형태**
+  - +82 라면 대한민국 sender
+  - +1 이라면 미국 sender
 
-# 할인 조건
+# notifier 의 종류
 
-- 타입이 sms 라면
-  - 번호가 +82 로 시작하면
-  - 번호가 +1 로 시작하면
-  - 번호가 010 으로 시작하면
-- 타입이 mail 이라면
-  - 수신이 i-nara 이라면
+- twilio (미국 번호이면서 SMS 타입의 notification)
+- NHN toast (한국 번호이면서 SMS 타입의 notification)

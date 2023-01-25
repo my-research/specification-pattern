@@ -1,11 +1,15 @@
-package com.github.dhslrl321.legacy
+package com.github.dhslrl321.service
 
+import com.github.dhslrl321.notifier.Notification
+import com.github.dhslrl321.notifier.Notifier
+import com.github.dhslrl321.notifier.ToastNotifier
+import com.github.dhslrl321.notifier.TwilioNotifier
 import java.lang.IllegalArgumentException
 
-class SimpleNotifier(
-    private val notifiers: List<Notifier>
-): Notifier {
-    override fun doNotify(notification: Notification) {
+class NotifierService(
+    private val notifiers: List<Notifier>,
+) {
+    fun doNotify(notification: Notification) {
         if (notification.type == "SMS") {
             if (notification.to.startsWith("+82")) {
                 val notifier = notifiers.filterIsInstance<TwilioNotifier>().first()
