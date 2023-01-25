@@ -1,7 +1,6 @@
 package com.github.dhslrl321
 
 import com.github.dhslrl321.notifier.Notification
-import com.github.dhslrl321.notifier.NotifierContainer
 import com.github.dhslrl321.notifier.ToastNotifier
 import com.github.dhslrl321.notifier.TwilioNotifier
 
