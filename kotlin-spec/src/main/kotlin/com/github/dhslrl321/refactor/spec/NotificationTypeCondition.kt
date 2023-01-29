@@ -2,9 +2,9 @@ package com.github.dhslrl321.refactor.spec
 
 import com.github.dhslrl321.notifier.Notification
 
-class NotificationTypeSpecification(
+class NotificationTypeCondition(
     private val type: String,
-) : Specification {
+) : Condition {
     override fun isSatisfiedBy(notification: Notification): Boolean =
         notification.type == type
 }
