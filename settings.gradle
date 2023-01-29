@@ -1,4 +1,4 @@
 rootProject.name = 'specification-pattern'
 
 include 'java-spec'
-include 'kotlin-spec'
+include 'kotlin-spec-example'
