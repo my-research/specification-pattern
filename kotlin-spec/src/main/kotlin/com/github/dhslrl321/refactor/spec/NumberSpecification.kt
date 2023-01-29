@@ -2,9 +2,9 @@ package com.github.dhslrl321.refactor.spec
 
 import com.github.dhslrl321.notifier.Notification
 
-class NumberCondition(
+class NumberSpecification(
     private val prefix: String,
-) : Condition {
+) : Specification {
     override fun isSatisfiedBy(notification: Notification): Boolean =
         notification.to.startsWith(prefix)
 }
