@@ -7,3 +7,4 @@ class AndCondition<FACTOR>(
     override fun isSatisfiedBy(factor: FACTOR): Boolean =
         left.isSatisfiedBy(factor) && right.isSatisfiedBy(factor)
 }
+

@@ -9,3 +9,4 @@ class PrefixNumberCondition(
     override fun isSatisfiedBy(factor: Notification): Boolean =
         factor.to.startsWith(prefix)
 }
+

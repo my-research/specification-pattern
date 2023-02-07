@@ -1,5 +1,6 @@
 package com.github.dhslrl321.config
 
+import com.github.dhslrl321.condition.domain.LengthCondition
 import com.github.dhslrl321.condition.general.AndCondition
 import com.github.dhslrl321.condition.domain.NotificationTypeCondition
 import com.github.dhslrl321.condition.domain.PrefixNumberCondition
@@ -13,18 +14,24 @@ class ApplicationBeanConfig {
     }
 
     private fun toastNotifier(): Notifier {
-        val typeCondition = NotificationTypeCondition("SMS")
-        val prefixCondition = PrefixNumberCondition("+82")
-
-        val typeAndPrefix = AndCondition(typeCondition, prefixCondition)
-        return ToastNotifier(typeAndPrefix)
+        return ToastNotifier(
+            spec = AndCondition(
+                AndCondition(
+                    NotificationTypeCondition("SMS"),
+                    PrefixNumberCondition("+82")
+                ),
+                LengthCondition(32)
+            )
+        )
     }
 
     private fun twilioNotifier(): Notifier {
-        val typeCondition = NotificationTypeCondition("SMS")
-        val prefixCondition = PrefixNumberCondition("+1")
-
-        val typeAndPrefix = AndCondition(typeCondition, prefixCondition)
-        return TwilioNotifier(typeAndPrefix)
+        return TwilioNotifier(
+            spec = AndCondition(
+                NotificationTypeCondition("SMS"),
+                PrefixNumberCondition("+1")
+            )
+        )
     }
 }
+
