@@ -1,4 +1,4 @@
-package com.github.dhslrl321.policy;
+package com.github.dhslrl321.promotion;
 
 import com.github.dhslrl321.Factor;
 

@@ -9,7 +9,11 @@ public class Conditions {
         return new And(c1, c2);
     }
 
-    public static Condition or(Condition c1, Condition c2) {
+    public static Condition OR(Condition c1, Condition c2) {
         return new Or(c1, c2);
+    }
+
+    public static Condition NOT(Condition condition) {
+        return new Not(condition);
     }
 }
