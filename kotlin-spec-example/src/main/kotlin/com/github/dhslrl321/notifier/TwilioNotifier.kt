@@ -1,6 +1,6 @@
 package com.github.dhslrl321.notifier
 
-import com.github.dhslrl321.condition.general.Condition
+import com.github.dhslrl321.specification.general.Condition
 
 class TwilioNotifier(
     private val spec: Condition<Notification>

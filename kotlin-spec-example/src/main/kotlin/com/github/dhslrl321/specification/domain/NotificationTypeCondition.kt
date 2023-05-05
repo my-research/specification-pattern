@@ -1,6 +1,6 @@
-package com.github.dhslrl321.condition.domain
+package com.github.dhslrl321.specification.domain
 
-import com.github.dhslrl321.condition.general.Condition
+import com.github.dhslrl321.specification.general.Condition
 import com.github.dhslrl321.notifier.Notification
 
 class NotificationTypeCondition(

@@ -1,4 +1,4 @@
-package com.github.dhslrl321.condition.general
+package com.github.dhslrl321.specification.general
 
 class AndCondition<FACTOR>(
     private val left: Condition<FACTOR>,

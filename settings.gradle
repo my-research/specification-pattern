@@ -2,3 +2,4 @@ rootProject.name = 'specification-pattern'
 
 include 'java-spec'
 include 'kotlin-spec-example'
+include 'use-in-promotions'
