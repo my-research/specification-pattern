@@ -26,7 +26,10 @@ public class MyPromotionConfig {
 
     private Promotion happyPromotion() {
         Condition 발동조건 = AND(
-                AND(ageOver(19), maxPriceOver(210_000)),
+                AND(
+                        ageOver(19),
+                        maxPriceOver(210_000)
+                ),
                 periodBetween(dayOf(2022, 1, 1), dayOf(2023, 5, 31))
         );
 

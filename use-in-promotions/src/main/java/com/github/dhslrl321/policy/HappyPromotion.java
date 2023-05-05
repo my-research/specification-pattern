@@ -11,6 +11,9 @@ public class HappyPromotion implements Promotion {
 
     @Override
     public Benefit getBenefit(Factor factor) {
+        if (condition.isSatisfiedBy(factor)) {
+            return this.benefit;
+        }
         return null;
     }
 }
