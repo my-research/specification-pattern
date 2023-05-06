@@ -16,7 +16,7 @@ import static com.github.dhslrl321.specification.PeriodCondition.periodBetween;
 import static com.github.dhslrl321.specification.core.Conditions.*;
 
 public class MyPromotionConfig {
-    private final List<Promotion> promotions = new ArrayList<>();
+    final List<Promotion> promotions = new ArrayList<>();
 
     public void init() {
         promotions.add(happyPromotion());
